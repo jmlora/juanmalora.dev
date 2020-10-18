@@ -1,7 +1,18 @@
-import '../styles/globals.css'
+import globalStyles from 'styles/globals'
+import globalFonts from 'styles/fonts'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }) {
+  return (
+    <>
+      <Component {...pageProps} />
+      <style jsx global>
+        {globalStyles}
+      </style>
+      <style jsx global>
+        {globalFonts}
+      </style>
+    </>
+  )
 }
 
-export default MyApp
+export default App

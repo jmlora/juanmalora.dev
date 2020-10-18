@@ -1,0 +1,17 @@
+.container {
+  background-color: var(--primary-bg-color);
+  display: flex;
+  flex-direction: row;
+
+
+
+
+  .infoContainer {
+    color: var(--header-primary-color);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+}
