@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--body-padding-top);
+}
+
+.wrapper {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  max-width: var(--page-width);
+  width: 100%;
+}
