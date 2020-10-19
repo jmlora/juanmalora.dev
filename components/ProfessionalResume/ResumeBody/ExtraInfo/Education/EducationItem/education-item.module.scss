@@ -1,0 +1,18 @@
+.container {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  .degree {
+    color: var(--primary-body-color);
+    font-weight: 700;
+  }
+
+  .organization {
+    color: var(--light-body-color);
+    font-size: 0.9rem;
+  }
+
+  .period {
+    color: var(--lighter-body-color);
+    font-size: 0.9rem;
+  }
+}

@@ -1,18 +1,17 @@
 import styles from './professional-experience.module.scss'
-import ResumeBodyTitle from '../ResumeBodyTitle'
 import JobPosition from './JobPosition'
 import jobsData from './professional-experience.data'
+import SectionContainer from 'components/SectionContainer'
 
 function ProfessionalExperience() {
   return (
-    <div className={styles.container}>
-      <ResumeBodyTitle>Experiencia Profesional</ResumeBodyTitle>
+    <SectionContainer title="Experiencia Profesional">
       <div className={styles.jobPositionsContainer}>
         {jobsData.map((job, index) => (
           <JobPosition key={index} jobInfo={job} />
         ))}
       </div>
-    </div>
+    </SectionContainer>
   )
 }
 

@@ -14,9 +14,7 @@ function ResumeBody() {
           <ProfessionalExperience />
         </div>
         <div className={styles.extraInfoContainer}>
-          <ExtraInfo>
-            <div>info</div>
-          </ExtraInfo>
+          <ExtraInfo />
         </div>
       </div>
     </div>
