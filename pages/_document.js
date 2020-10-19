@@ -13,7 +13,7 @@ function AmpWrap({ ampOnly, nonAmp }) {
 class NextSite extends Document {
   render() {
     return (
-      <Html lang="es" class="no-fouc">
+      <Html lang="es" className="no-fouc">
         <Head>
           <link rel="preload" href="/styles/globals.js" as="style" crossOrigin="anonymous" />
           <link

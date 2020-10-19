@@ -8,8 +8,8 @@ function ProfessionalExperience() {
     <div className={styles.container}>
       <ResumeBodyTitle>Experiencia Profesional</ResumeBodyTitle>
       <div className={styles.jobPositionsContainer}>
-        {jobsData.map(job => (
-          <JobPosition jobInfo={job} />
+        {jobsData.map((job, index) => (
+          <JobPosition key={index} jobInfo={job} />
         ))}
       </div>
     </div>

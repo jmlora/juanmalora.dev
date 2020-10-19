@@ -4,10 +4,12 @@ import JobPositionSubtitle from '../JobPositionSubtitle'
 function JobPositionAchieves({ achieves = [] }) {
   return (
     <div>
-      <JobPositionSubtitle text="Logros" />
+      <JobPositionSubtitle text="Logros:" />
       <ul className={styles.listContainer}>
-        {achieves.map(achieve => (
-          <li className={styles.listItem}>{achieve}</li>
+        {achieves.map((achieve, index) => (
+          <li key={index} className={styles.listItem}>
+            {achieve}
+          </li>
         ))}
       </ul>
     </div>

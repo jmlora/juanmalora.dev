@@ -1,4 +1,4 @@
-import styles from './global-container.module.css'
+import styles from './global-container.module.scss'
 
 function GlobalContainer({ children }) {
   return (
