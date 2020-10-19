@@ -1,0 +1,27 @@
+.container {
+  margin-bottom: 0.5rem;
+
+  .titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+
+    .title {
+      color: var(--primary-body-color);
+      display: flex;
+      font-size: 1.125rem;
+    }
+
+    .company {
+      color: var(--light-body-color);
+      display: flex;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+  }
+
+  .positionTime {
+    color: var(--lighter-body-color);
+    font-size: 0.9rem;
+  }
+}

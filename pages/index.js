@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Header from 'components/Header'
 import Footer from 'components/Footer'
 import GlobalContainer from 'components/GlobalContainer'
+import ProfessionalResume from 'components/ProfessionalResume'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
 
       <main>
         <GlobalContainer>
-          <Header />
+          <ProfessionalResume />
           <Footer />
         </GlobalContainer>
       </main>

@@ -30,10 +30,17 @@ export default css.global`
   :root {
     /* Colors */
     --body-bg-color: #f7f8fa;
-    --primary-bg-color: #434e5e;
+
+    --primary-header-bg-color: #434e5e;
     --header-primary-color: #fff;
     --header-primary-color-light: rgba(255, 255, 255, 0.9);
     --header-primary-color-lighter: rgba(255, 255, 255, 0.6);
+
+    --primary-body-color: #434e5e;
+    --light-body-color: #58677c;
+    --lighter-body-color: #aab4c3;
+    --contrast-body-color: #fff;
+    --horizontal-rule-color: #8d9aad;
 
     /* Widths, spacings */
     --page-width: 1000px;
