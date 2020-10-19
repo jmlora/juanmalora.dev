@@ -39,4 +39,16 @@ export default css.global`
     --page-width: 1000px;
     --body-padding-top: 30px;
   }
+
+  .no-fouc {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .fouc {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s;
+    -webkit-transition: opacity 0.4s;
+  }
 `

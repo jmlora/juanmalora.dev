@@ -13,8 +13,51 @@ function AmpWrap({ ampOnly, nonAmp }) {
 class NextSite extends Document {
   render() {
     return (
-      <Html lang="es">
+      <Html lang="es" class="no-fouc">
         <Head>
+          <link rel="preload" href="/styles/globals.js" as="style" crossOrigin="anonymous" />
+          <link
+            rel="preload"
+            href="/assets/fonts/Roboto-Thin.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/assets/fonts/Roboto-Light.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/assets/fonts/Roboto-Medium.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/assets/fonts/Roboto-Regular.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/assets/fonts/Roboto-Bold.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/assets/fonts/Roboto-Black.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
