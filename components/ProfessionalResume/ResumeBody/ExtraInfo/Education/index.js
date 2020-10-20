@@ -1,4 +1,3 @@
-import styles from './education.module.scss'
 import SectionContainer from 'components/SectionContainer'
 import EducationItem from './EducationItem'
 

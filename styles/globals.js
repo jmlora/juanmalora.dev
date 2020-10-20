@@ -42,6 +42,9 @@ export default css.global`
     --contrast-body-color: #fff;
     --horizontal-rule-color: #8d9aad;
 
+    --progress-bar-bg-color: #e9ecef;
+    --progress-bar-fg-color: #434e5e;
+
     /* Widths, spacings */
     --page-width: 1000px;
     --body-padding-top: 30px;

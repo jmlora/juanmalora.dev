@@ -10,7 +10,7 @@ function AmpWrap({ ampOnly, nonAmp }) {
   return !isAmp && nonAmp
 }
 
-class NextSite extends Document {
+class CustomDocument extends Document {
   render() {
     return (
       <Html lang="es" className="no-fouc">
@@ -157,4 +157,4 @@ class NextSite extends Document {
   }
 }
 
-export default NextSite
+export default CustomDocument
