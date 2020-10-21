@@ -6,8 +6,8 @@ const compression = require('compression')
 
 let options = {
   key: fs.readFileSync('./ssl/domain.key'),
-  cert: fs.readFileSync('./ssl/juanmalora_dev_certificate.pem'),
-  ca: fs.readFileSync('./ssl/juanmalora_dev.ca-bundle')
+  cert: fs.readFileSync('./ssl/certificate.pem'),
+  ca: fs.readFileSync('./ssl/authority.ca-bundle')
 }
 
 const dev = process.env.NODE_ENV !== 'production'
