@@ -1,8 +1,22 @@
-.content {
-  text-align: center;
-  font-size: 0.8rem;
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  position: relative;
 
-  a:hover {
-    color: inherit;
+  .wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    max-width: 1000px;
+
+    .content {
+      font-size: 0.8rem;
+      text-align: center;
+
+      a:hover {
+        color: inherit;
+      }
+    }
   }
 }

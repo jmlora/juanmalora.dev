@@ -14,8 +14,8 @@ export default function Home() {
       <main>
         <GlobalContainer>
           <ProfessionalResume />
-          <Footer />
         </GlobalContainer>
+        <Footer />
       </main>
     </div>
   )
