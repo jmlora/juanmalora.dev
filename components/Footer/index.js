@@ -16,6 +16,16 @@ function Footer() {
             src="assets/images/positivessl_trust_seal_sm_124x32.webp"
             className={styles.profilePicture}
           />
+          <script
+            language="JavaScript"
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
+            TrustLogo("https://www.juanmalora.dev/assets/images/positivessl_trust_seal_sm_124x32.webp",
+            "CL1", "none");
+          `
+            }}
+          ></script>
         </div>
       </div>
     </footer>
