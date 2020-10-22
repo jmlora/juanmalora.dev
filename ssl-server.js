@@ -1,7 +1,14 @@
 const fs = require('fs')
+const https = require('https')
 const next = require('next')
 const express = require('express')
 const compression = require('compression')
+
+let options = {
+  key: fs.readFileSync('./ssl/domain.key'),
+  cert: fs.readFileSync('./ssl/certificate.pem'),
+  ca: fs.readFileSync('./ssl/authority.ca-bundle')
+}
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
@@ -26,8 +33,9 @@ app.prepare().then(() => {
     return handler(req, res)
   })
 
-  expressServer.listen(3000, err => {
-    if (err) throw err
-    console.log(`> Ready on http://localhost:3000`)
+  const httpsServer = https.createServer(options, expressServer)
+
+  httpsServer.listen(3000, () => {
+    console.log('HTTPS Server running on port 3000')
   })
 })
