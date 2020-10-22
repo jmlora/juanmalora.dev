@@ -7,6 +7,8 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handler = app.getRequestHandler()
 
+const PORT = process.env.PORT || 3000
+
 const shouldCompress = (req, res) => {
   // don't compress responses asking explicitly not
   if (req.headers['x-no-compression']) {
@@ -26,8 +28,8 @@ app.prepare().then(() => {
     return handler(req, res)
   })
 
-  expressServer.listen(3000, err => {
+  expressServer.listen(PORT, err => {
     if (err) throw err
-    console.log(`> Ready on http://localhost:3000`)
+    console.log(`> Ready on http://localhost:${PORT}`)
   })
 })
