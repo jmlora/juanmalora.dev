@@ -1,0 +1,19 @@
+@import "styles/constants.scss";
+
+.jobPositionsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    background: var(--lighter-body-color);
+    left: 6px;
+    top: 4px;
+    position: absolute;
+  }
+}

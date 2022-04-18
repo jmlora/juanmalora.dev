@@ -1,0 +1,17 @@
+@import "styles/constants.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--body-padding-top);
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding-top: 0;
+  }
+}
+
+.wrapper {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  max-width: var(--page-width);
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+@import "styles/constants.scss";
+
+.imageContainer {
+  display: flex;
+
+  @media screen and (max-width: $breakpoint-md) {
+    justify-content: center;
+  }
+
+  .profilePicture {
+    display: flex;
+    width: 220px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      border-radius: 4px;
+      width: 120px;
+    }
+  }
+}

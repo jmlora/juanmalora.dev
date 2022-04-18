@@ -1,0 +1,25 @@
+.listContainer {
+  list-style: none;
+  margin-bottom: 1rem;
+
+  .listItem {
+    color: var(--light-body-color);
+    display: inline-block;
+    line-height: 1.5;
+    margin-right: 0.5rem;
+
+    .badge {
+      background: var(--primary-body-color);
+      border-radius: 10rem;
+      color: var(--contrast-body-color);
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      line-height: 1;
+      padding: 0.2rem 0.4rem;
+      text-align: center;
+      vertical-align: baseline;
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "styles/constants.scss";
+
+.container {
+  background-color: var(--primary-header-bg-color);
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    padding-top: 1.5rem;
+  }
+
+  .infoContainer {
+    color: var(--header-primary-color);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    @media screen and (max-width: $breakpoint-md) {
+      flex-direction: column;
+    }
+  }
+}

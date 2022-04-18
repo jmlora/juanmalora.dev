@@ -1,0 +1,17 @@
+.socialLinkContainer {
+  color: var(--header-primary-color-lighter);
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+
+  .socialLink {
+    margin-bottom: 1rem;
+    .icon {
+      color: var(--header-primary-color);
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+}

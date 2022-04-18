@@ -1,0 +1,37 @@
+@import "styles/constants.scss";
+
+.container {
+  margin-bottom: 0.5rem;
+
+  .titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+
+    @media screen and (max-width: $breakpoint-md) {
+      flex-direction: column;
+    }
+
+    .title {
+      color: var(--primary-body-color);
+      display: flex;
+      font-size: 1.125rem;
+
+      @media screen and (max-width: $breakpoint-md) {
+        margin-bottom: 0.25rem;
+      }
+    }
+
+    .company {
+      color: var(--light-body-color);
+      display: flex;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+  }
+
+  .positionTime {
+    color: var(--lighter-body-color);
+    font-size: 0.9rem;
+  }
+}

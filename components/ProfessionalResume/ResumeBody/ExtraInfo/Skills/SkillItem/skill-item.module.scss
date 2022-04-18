@@ -1,0 +1,28 @@
+.container {
+  color: var(--light-body-color);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.7rem;
+
+  .text {
+    font-size: 0.875rem;
+    color: var(--primary-body-color);
+    margin-bottom: 0.2rem;
+  }
+
+  .progressContainer {
+    background-color: var(--progress-bar-bg-color);
+    border-radius: 3px;
+    display: flex;
+    flex-grow: 1;
+    font-size: 075rem;
+    height: 0.6rem;
+    overflow: hidden;
+
+    .progressBar {
+      background-color: var(--progress-bar-fg-color);
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}

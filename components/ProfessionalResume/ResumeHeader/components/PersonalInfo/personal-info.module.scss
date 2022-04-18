@@ -1,0 +1,30 @@
+.info {
+  display: flex;
+  flex-direction: column;
+
+  .name {
+    font-size: 2.25rem;
+    font-weight: bold;
+    letter-spacing: 0.175rem;
+    line-height: 1.2;
+    margin-bottom: 0.30rem;
+    text-transform: uppercase;
+  }
+
+  .description {
+    color: var(--header-primary-color-light);
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+
+  .contactEmail {
+    color: var(--header-primary-color-lighter);
+    font-size: 1.05rem;
+    font-weight: normal;
+
+    .emailText {
+      margin-left: 0.25rem;
+    }
+  }
+}
